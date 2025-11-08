@@ -4,7 +4,7 @@ document.getElementById('reverseForm').addEventListener('submit', async (e) => {
   const resultDiv = document.getElementById('result');
 
   try {
-    const response = await fetch('http://localhost:3000/reverse', {
+    const response = await fetch('/api/reverse', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
